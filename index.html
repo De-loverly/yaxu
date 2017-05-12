@@ -1,0 +1,1550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<title>雅旭电子</title>
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+
+		<link href='http://cdn.webfont.youziku.com/webfonts/nomal/25532/19518/57775c94f629d801187729bc.css' rel='stylesheet' type='text/css' />
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/swiper.css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+		<!-- 业务切换 -->
+		<link rel="stylesheet" href="css/swiper.css">
+		<script src="js/swiper.js"></script>
+		<script src="js/edu.js"></script>
+		<script src="js/color.js"></script>
+		<style>
+		/*fontface*/
+			.iconfont {
+				font-family: "iconfont";
+				font-size: 16px;
+				font-style: normal;
+			}
+			
+			@font-face {
+				font-family: 'iconfont';
+				src: url('http://at.alicdn.com/t/font_1466471238_8250837.eot');
+				/* IE9*/
+				src: url('http://at.alicdn.com/t/font_1466471238_8250837.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+				url('http://at.alicdn.com/t/font_1466471238_8250837.woff') format('woff'), /* chrome、firefox */
+				url('http://at.alicdn.com/t/font_1466471238_8250837.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+				url('http://at.alicdn.com/t/font_1466471238_8250837.svg#iconfont') format('svg');
+				/* iOS 4.1- */
+			}
+			
+			@-moz-keyframes spin {
+				0% {
+					-moz-transform: rotate(0deg);
+				}
+				100% {
+					-moz-transform: rotate(360deg);
+				}
+			}
+			
+			@-webkit-keyframes spin {
+				0% {
+					-webkit-transform: rotate(0deg);
+				}
+				100% {
+					-webkit-transform: rotate(360deg);
+				}
+			}
+			
+			@-o-keyframes spin {
+				0% {
+					-o-transform: rotate(0deg);
+				}
+				100% {
+					-o-transform: rotate(360deg);
+				}
+			}
+			
+			@-ms-keyframes spin {
+				0% {
+					-ms-transform: rotate(0deg);
+				}
+				100% {
+					-ms-transform: rotate(360deg);
+				}
+			}
+			
+			@keyframes spin {
+				0% {
+					transform: rotate(0deg);
+				}
+				100% {
+					transform: rotate(360deg);
+				}
+			}
+			/*页面加载*/
+			
+			#preloader {
+				position: fixed;
+				z-index: 2500;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background-color: #333;
+				z-index: 999999;
+			}
+			
+			#status {
+				position: fixed;
+				z-index: 999999;
+				width: 200px;
+				height: 200px;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin-top: -120px;
+				margin-left: -100px;
+				border: 1px dashed #fff;
+				border-radius: 200px;
+				-moz-animation: spin 10s infinite linear;
+				-o-animation: spin 10s infinite linear;
+				-webkit-animation: spin 10s infinite linear;
+				animation: spin 10s infinite linear;
+				-webkit-transform: transition3d(0, 0, 0)
+			}
+			
+			#preloader .tutu {
+				position: fixed;
+				z-index: 1000000;
+				width: 200px;
+				height: 200px;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin-top: -120px;
+				margin-left: -100px;
+				background-image: url(images/loadlogo_13.png);
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: 100px 117px;
+			}
+			
+			
+			/*业务切换*/
+			
+			.swiper-container1 .swiper-slide {
+				width: 250px;
+				height: 380px;
+				background-color: #fff;
+				border-radius: 10px;
+				margin: 0 20px;
+				box-shadow: 0px 0px 4px #c6940f;
+				overflow: hidden;
+			}
+			/*4*/
+			
+			@media screen and (device-aspect-ratio: 2/3) {
+				.swiper-container1 .swiper-slide {
+					width: 250px;
+					height: 380px;
+					background-color: #fff;
+					border-radius: 10px;
+					margin: 0 20px;
+					box-shadow: 0px 0px 10px #68a5b9;
+					overflow: hidden;
+				}
+			}
+			/*5*/
+			
+			@media screen and (device-aspect-ratio: 40/71) {
+				.swiper-container1 .swiper-wrapper {
+					padding-top: 40px;
+				}
+			}
+			/*6*/
+			
+			@media screen and (device-aspect-ratio: 667/375) {
+				.swiper-container1 .swiper-wrapper {
+					padding-top: 100px;
+				}
+			}
+			
+			@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+				.swiper-container1 .swiper-wrapper {
+					padding-top: 100px;
+				}
+			}
+			/*6p*/
+			
+			@media screen and (device-aspect-ratio: 16/9) {
+				.swiper-container1 .swiper-wrapper {
+					padding-top: 100px;
+				}
+			}
+			
+			@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
+				.swiper-container1 .swiper-wrapper {
+					padding-top: 150px;
+				}
+			}
+			/*ipad*/
+			
+			@media screen and (device-aspect-ratio: 3/4) {}
+			
+			.contents{
+				width: 80%;
+				height: 50%;
+				position: absolute;
+				left: 0;
+				right: 0;
+				margin: auto;
+				bottom: 6%;
+				overflow: auto;
+				padding: 10px 20px 10px 20px;
+			}
+			.contents h2{
+				width: 100%;
+				text-align: center;
+				font-size: 20px;
+				font-family: "微软雅黑";
+				color: #313131;
+				font-weight: 300;
+			}
+			.contents p{
+				font-size: 14px;
+				font-family: "微软雅黑";
+				color: #313131;
+				margin: 0;
+				padding: 0;
+			}
+			.hezi p{
+				font-size: 11px;
+			}
+			.hezi .a{
+				color: #2FCEED;
+			}
+			.contentes{
+				width: 80%;
+				height: 85%;
+				background: #fff;
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				margin: auto;		
+				border-radius: 15px;	
+				overflow: auto;
+				padding: 30px 30px 20px 30px;
+			}
+			.contentes p{
+				font-size: 16px;
+				color: #313131;
+				margin-top: 10px;
+			}
+			.erweima{
+				width: 75%;
+				height: auto;
+				margin: auto;
+			}
+			.erweima img{
+				width: 100%;
+			}
+			.contente{
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				margin: auto;		
+				border-radius: 15px;	
+				overflow: auto;
+				padding: 30px 30px 20px 30px;
+				color: #F3EFFA;
+			}
+			.contente h2,.contente p{
+				color: #F3EFFA;
+			}
+			.contente p{
+				font-size: 13px;
+				margin-top: 10px;
+			}
+			.contente h3{
+				width: 100%;
+				text-align: left;
+				font-size: 16px;
+				font-weight: normal;
+				font-family: "微软雅黑";
+			}
+			#table{
+				border: none;
+				padding: 0;
+				margin: 0;
+				font-size: 12px;
+				border: 1px solid #BC9BE3;
+				color: #F3EFFA;
+				width: 100%;
+				height: 65%;
+				font-family: "微软雅黑";
+			}
+			#table td{
+				border: 1px solid #BC9BE3;
+			}
+			#table tr td:nth-of-type(1){
+				width: 25%;
+				text-align: center;
+			}
+			#table tr td:nth-of-type(2){
+				width: 25%;
+				text-align: center;
+			}
+			#table tr td:nth-of-type(3){
+				padding-left: 8px;
+			}
+			#table tr:nth-of-type(1) td{
+				height: 10%;
+				padding: 0;
+				text-align: center;
+			}
+			#table tr:nth-of-type(2){
+				height: 15%;
+			}
+			.top{
+				width: 100%;
+				height: 85%;
+			}
+			.top-box{
+				height: 100%;
+				width: 100%;
+				position: relative;
+			}
+			.fang{
+				position: absolute;
+				left: 0;
+				top: 0;
+				height: 100%;
+				width: 100%;
+				padding:40px 20px 20px 20px;
+				padding-bottom: 20px;
+				overflow: auto;
+				display: none;
+			}
+			.activees{
+				display: block;
+			}
+			.banner{
+				width: 100%;
+				/*height: 50%;*/
+				text-align: center;
+				margin-bottom: 20px;
+			}
+			.banner img{
+				width: 100%;
+			}
+			.fang{
+				width: 100%;
+				height: 100%;
+			}
+			.fang p{
+				font-size: 16px;
+				font-family: "微软雅黑";
+				color: #393939;
+				margin: 0;
+				padding: 0;
+			}
+			.banner p{
+				font-size: 18px;
+				font-weight: 500;
+				margin-bottom: 0.3rem;
+			}
+			.fang-bottom{
+				width: 100%;
+				height: auto;
+				overflow: hidden;
+			}
+			.fang-bottom div{
+				margin-top: 8px;
+				font-family: "微软雅黑";
+				color: #393939;
+			}
+			.fang-bottom div{
+				float: left;					
+			}
+			.jindian{
+				width: 100%;
+				height: auto;
+				margin-top: 20px;	
+			}
+			.jindian p{
+				float: left;
+				font-size: 16px;
+				color: #323232;
+				line-height: 42px;
+			}
+			.jindian p:nth-of-type(2){
+				float: right;
+				font-size: 15px;
+				color: #E18591;
+			}
+			.jindian p:nth-of-type(2) span{
+				font-size: 22px;
+			}
+			.bottom{
+				width: 100%;
+				height: 15%;
+				background: #F8A129;
+				padding: 0 10px;
+				position: relative;
+				overflow-x: auto;
+			}
+			.bottom-box{
+				height: 45px;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+				width: 100%;
+				overflow: hidden;
+				transition: all .5s;
+			}
+			.thume{
+				width: 40px;
+				height: 40px;
+				background: #fff;
+				float: left;
+				margin-left: 10px;
+				text-align: center;
+				position: relative;
+			}
+			.thume img{
+				width: 90%;
+				position: absolute;
+				left: 0;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				margin: auto;
+			}
+			.thume:nth-of-type(1){
+				margin-left: 0;
+			}
+			.zhao{
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				left: 0;
+				top: 0;
+				background: rgba(248,161,41,0.5);
+			}
+			.actives .zhao{
+				display: none;
+			}
+			.sanjiao{
+				border-bottom: 0;
+				border-top: 10px solid #fff;
+				border-left: 10px solid #F8A129;
+				border-right: 10px solid #F8A129;
+				position: fixed;
+				left: 48vw;
+				margin: auto;
+				top: 84.8%;
+			}
+		</style>
+		<script>
+			$(window).load(function() {
+				$("#status").delay(1500).fadeOut();
+				$("#preloader .tutu").delay(1500).fadeOut();
+				$("#preloader").delay(2000).fadeOut("slow");
+			})
+		</script>
+	</head>
+
+	<body>
+		<div style="display:none">
+			<img src="images/0000.jpg">
+		</div>
+		<!-- logo浮动 -->
+		<span class="fu_logo" id="inner_demo1" style="width: 40px;height: 40px;overflow: hidden;border-radius: 50%;float: left;position: relative;"><img src="images/logo.png" alt="" style="width: 80%;position: absolute;left: 0;right: 0;bottom: 0;top: 0;margin: auto;border-radius: 50%;"/></span>
+		<div class="fuBox">
+			<span class="bl-icon bl-icon-close"></span>
+			<section style="padding: 15px;font-family: '微软雅黑';" class="dianzi">
+				<img src="images/logo.png" alt="" style="background: #F86E0A;border-radius: 50%;width: 30px;"/>
+				<img src="images/0.png" class="mlogo" alt="" style="width: 80%;"><span></span>			
+				<p>西安雅旭电子科技有限责任公司是集计算机以及桌面虚拟化销售、网络安装、系统集成、软硬件维修的一体化公司。创立于2007年8月，现位于雁塔区丈八一路绿地SOHO A座1109室。</p>
+				<p>雅旭公司本着“站在客户角度，应对所有需求”的宗旨，赢得了广大客户的信赖。十年来通过不懈努力和发展已具有一定的规模。公司坚持以市场为导向，以联想全线IT产品及电子产品为依托，拥有一批高素质层次化科技专业人才，有完善的售后服务体系。</p>
+				<p>雅旭公司一直保持着高速发展的状态在企业经营过程中，坚持与客户一起成长，与供应商、销售商建立了稳固的合作关系。在经营中客户给予了我们巨大的支持。现在公司有供应、销售、渠道等多方的合作伙伴，为企业的不断发展打下了坚实的基础。</p>
+				<p>雅旭公司拥有一支勇于创新的强有力团体，下属设有业务部、商务部、财务部、技术部、售后服务部。以诚信为基础，以客户为中心，发扬“敬业、专注、诚信、创新”的企业精神，与员工、供应商、销售商等合作伙伴一起成长，为消费者创造价值。在科技飞速发展的今天，雅旭将以科技创新和机制创新为动力，向建立国际化、高科技型现代化企业的目标前进。</p>
+				<p>我们今天：</p>
+				<p>拥有良好畅通的与用户的合作交流关系</p>
+				<p>拥有对信息系统透彻全面的了解</p>
+				<p>拥有优秀的人才和成熟的解决方案</p>
+				<p>拥有国内外著名厂商的策略支持</p>
+				<p>拥有遍布西北的技术支持和服务营销网络</p>
+				<p>我们明天：</p>
+				<p>昨天，雅旭人努力开创、积极进取</p>
+				<p>明天，强烈的历史使命感，促使雅旭人激流勇进、全身投入，与中国信息化建设共同创造新世纪的腾飞！</p>
+			</section>
+		</div>
+		<div class="fuceng"></div>
+		<!-- logo浮动end -->
+		<div class="container">
+			<div id="bl-main" class="bl-main">
+				
+				<!-- 电脑维护 -->
+				<section>
+					<div class="bl-box">
+						<h2 class="css44f6aecc163bc"><span>电脑维护</span></h2>
+						<p>Ya Xu  Electronics</p>
+					</div>
+					<div class="bl-content" style="top:0;left: 0;right: 0;bottom: 0;padding: 0;background: url(images/bg.png) no-repeat;background-color:#F6F6F6;background-size: 100% 100%;width: 100%;height: 100%;">
+						<div class="contents">
+							<h2>电脑维护</h2>
+							<p>电脑软件的安装与维护；</p>
+							<p> 电脑硬件的更新与维护；</p>
+							<p> 操作系统的安装、配置与维护；</p>
+							<p>操作系统软件的补丁更新；</p>
+							<p>数据库的安装、配置与维护；</p>
+							<p> 常用软件的安装和维护 病毒的查杀与预防：IT资产清查/盘点</p>
+						</div>
+					</div>
+					
+					<span class="bl-icon bl-icon-close"></span>
+				</section>
+				<!-- oa产品维护 -->
+				<section id="bl-work-section">
+					<div class="bl-box">
+						<h2 class="css44f6aecc163bc"><span>OA产品维护</span></h2>
+						<p>Security services</p>
+					</div>
+					<div class="bl-content" style="top:0;left: 0;right: 0;bottom: 0;padding: 0;background: url(images/bg1.png) no-repeat;background-color:#F6F6F6;background-size: 100% 100%;width: 100%;height: 100%;">
+						<div class="contents">
+							<h2>打印机维修</h2>
+							<p>维修范围：激光打印机、喷墨打印机，网络结构打印机、针式打印机、票据打印机、收款打印机、多功能打印机等。</p>
+							<p>维修故障：不通电、卡纸、打印断纸、断针、跳行、字迹异常、错位、打印空白、进纸异常、不联机、电路板短路、主芯片损坏、BI、打印或复印时不清晰、墨点、不进纸。</p>
+							<h2>传真机维修</h2>
+							<p>维修范围：激光传真机、热敏传真机、喷墨传真机、色带传真机、多功能一体传真机。</p>
+							<p>维修故障：复印全白、复印全黑、色带卡纸、不能打电话、不进纸、不能收发传真。</p>
+							<h2>复印机维修</h2>
+							<p>维修范围：数码复印机、彩色数码复印机、模拟复印机、多功能复印机、工程复印机。</p>
+							<p>维修故障：复印不清楚、卡纸、开机报错、密码破解、黑带、白带、模糊、无法复印、颜色不正常、定影组件、主板保养等。</p>
+						</div>
+
+					</div>
+					<span class="bl-icon bl-icon-close"></span>
+				</section>
+				<!-- it服务托管 -->
+				<section>
+					<div class="bl-box">
+						<h2 class="css44f6aecc163bc"><span>IT服务托管</span></h2>
+						<p>network maintenance</p>
+					</div>
+					<div class="bl-content" style="top:0;left: 0;right: 0;bottom: 0;padding: 0;background: url(images/bg3.png) no-repeat;background-color:#F6F6F6;background-size: 100% 100%;width: 100%;height: 100%;">
+						<div class="contents">
+							<h2>IT服务托管</h2>
+							<p>就是企业将IT部门的职的能全部或部分外包给专业公司（西安雅旭）进行管理、维护，集中精力发展企业的核心业务。简单的说就是公司在内部专职电脑维护工作人员不足或没有的情况下，将公司的全部电脑、网络及外设的维护工作转交给专业从事电脑维修维护的公司来进行全方位的维护。</p>
+						</div>
+
+					</div>
+					<span class="bl-icon bl-icon-close"></span>
+				</section>
+				<!-- 一体机 -->
+				<section>
+					<div class="bl-box">
+						<h2 class="css44f6aecc163bc"><span>一体机</span></h2>
+						<p>Computer maintenance</p>
+					</div>
+					<div class="bl-content yiti" style="top:0;left: 0;right: 0;bottom: 0;padding: 0;background:#fff;background-color:#F6F6F6;background-size: 100% 100%;width: 100%;height: 100%;">
+						<div class="top">
+							<div class="top-box">
+								<div class="fang activees">
+									<div class="banner">
+										<p>AIO 910</p>
+										<img src="images/png/yitiji/1.png" alt="" />
+									</div>
+									<p>联想（Lenovo）一体机电脑AIO 910 27英寸游戏娱乐一体机电脑 I7-6700T i7-6700T/16G/GTX950A/2G触屏</p>
+									
+								</div>	
+								<div class="fang">
+									<div class="banner">
+										<p>AIO 510</p>
+										<img src="images/png/yitiji/2.png" alt="" />
+									</div>
+									<p>AIO 510 (I7-6700T/Windows 10 家庭版/23英寸/8G 1T+128G</p>
+									
+								</div>			
+								<div class="fang">
+									<div class="banner">
+										<p>510S</p>
+										<img src="images/png/yitiji/3.png" alt="" />
+									</div>
+									<p>致美510S (I7-6500U/Windows 10 家庭版/23英寸/8G/1T/金) </p>
+									
+								</div>			
+								<div class="fang">
+									<div class="banner">
+										<p>AIO 300</p>
+										<img src="images/png/yitiji/4.png" alt="" />
+									</div>
+									<p>AIO 300 (I3/Windows 10 家庭版/20英寸/集显/500G/)</p>
+									
+								</div>			
+								<div class="fang">
+									<div class="banner">
+										<p>C5系列</p>
+										<img src="images/png/yitiji/5.png" alt="" />
+									</div>
+									<p>C560 I54460T8G1TGRW-10(黑色/白色)</p>
+									
+								</div>			
+								<div class="fang">
+									<div class="banner">
+										<p>ThinkCentre 一体台式电脑</p>
+										<img src="images/png/yitiji/6.png" alt="" />
+									</div>
+									<p>ThinkCentre E93z  21.5英寸I5-4430 8G 1T DVD触屏</p>
+									
+								</div>		
+								<div class="fang">
+									<div class="banner">
+										<p>ThinkCentre  M系列</p>
+										<img src="images/png/yitiji/7.png" alt="" />
+									</div>
+									<p>Thinkcenter M9550Z 23.8英寸 商务一体机电脑 支持十点触控 I7-6700 8G 128G固 1T 2G独显</p>
+									  
+								</div>			
+								<div class="fang">
+									<div class="banner">
+										<p>联想启天A系列</p>
+										<img src="images/png/yitiji/8.png" alt="" />
+									</div>
+									<p>I5-4590 4G/1T 1G独显</p>
+									  
+								</div>	
+								<div class="fang">
+									<div class="banner">
+										<p>扬天S系列</p>
+										<img src="images/png/yitiji/9.png" alt="" />
+									</div>
+									<p>扬天S800 24英寸I7-4790/16G/1T+128ssd/2G独显</p>
+									  
+								</div>	
+							</div>
+						</div>
+						<div class="bottom">
+							<div class="sanjiao"></div>
+							<div class="bottom-box" style="width: 450px;">
+								<div class="thume actives">
+									<img src="images/png/yitiji/1.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/yitiji/2.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/yitiji/3.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/yitiji/4.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/yitiji/5.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/yitiji/6.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/yitiji/7.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/yitiji/8.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/yitiji/9.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<span class="bl-icon bl-icon-close"></span>
+				</section>
+				<!-- 数据恢复 -->
+				<section>
+					<div class="bl-box">
+						<h2 class="css44f6aecc163bc"><span>数据恢复</span></h2>
+						<p>system maintenance</p>
+					</div>
+					<div class="bl-content" style="top:0;left: 0;right: 0;bottom: 0;padding: 0;background: url(images/bg2.png) no-repeat;background-color:#F6F6F6;background-size: 100% 100%;width: 100%;height: 100%;">
+						<div class="contents">
+							<h2>系统维护</h2>
+							<p> 制定备份方案，确保数据备份完整 评估备份流程，系统的进行制定流程。 实施备份处理， 验证备份结果，确保所备份的资料无误。 数据恢复处理，让数据重现。 验证数据处理，确保恢复的数据完整</p>
+						</div>
+
+					</div>
+					<span class="bl-icon bl-icon-close"></span>
+				</section>
+				
+				<!-- 台式电脑 -->
+				<section>
+					<div class="bl-box">
+						<h2 class="css44f6aecc163bc"><span>台式电脑</span></h2>
+						<p>Desktop computer</p>
+					</div>
+					<div class="bl-content taishi" style="top:0;left: 0;right: 0;bottom: 0;padding: 0;background:#fff;background-color:#F6F6F6;background-size: 100% 100%;width: 100%;height: 100%;">
+						<div class="top">
+							<div class="top-box">
+								<div class="fang activees">
+									<div class="banner">
+										<p>Y系列</p>
+										<img src="images/png/taishiji/1.png" alt="" />
+									</div>
+									<p>Y900 (i7-6700K/Windows 10家庭版/RX480/8G内存/单主机)</p>
+									
+								</div>	
+								<div class="fang">
+									<div class="banner">
+										<p>天逸50系列</p>
+										<img src="images/png/taishiji/2.png" alt="" />
+									</div>
+									<p>天逸5050 (I5/Windows 10 家庭版/2G 独显/4G/1T/单主机)</p>
+									
+								</div>			
+								<div class="fang">
+									<div class="banner">
+										<p>家悦H系列</p>
+										<img src="images/png/taishiji/3.png" alt="" />
+									</div>
+									<p>Lenovo H3060 I564004G1TGDW-10(单主机)</p>
+									
+								</div>			
+								<div class="fang">
+									<div class="banner">
+										<p>Erazer系列</p>
+										<img src="images/png/taishiji/4.png" alt="" />
+									</div>
+									<p>Erazer X315 (A10-7800/Windows 10 家庭版/2G独显/4G/1T/单主机</p>
+									
+								</div>			
+								<div class="fang">
+									<div class="banner">
+										<p>未来先锋K系列</p>
+										<img src="images/png/taishiji/5.png" alt="" />
+									</div>
+									<p>未来先锋 K450e 电竞游戏主机 (I5-4460/Windows10家庭版/单主机</p>
+									
+								</div>			
+								<div class="fang">
+									<div class="banner">
+										<p>ThinkCentre M系列</p>
+										<img src="images/png/taishiji/6.png" alt="" />
+									</div>
+									<p>联想(ThinkCentre)M8600T 商用办公台式电脑 i7-6700四核 独显主机 标配主机+23英寸显示器 I7-6700/8G1T/2G DVD刻录</p>
+									
+								</div>		
+								<div class="fang">
+									<div class="banner">
+										<p>ThinkCentre M  1L系列</p>
+										<img src="images/png/taishiji/7.png" alt="" />
+									</div>
+									<p>联想（ThinkCentre）M8600Q 迷你1升机箱电脑I7-6700 主机+23.8IPS英寸显示屏 I7-6700T 8G 1T 无光驱 集WIN7</p>
+									  
+								</div>		
+								<div class="fang">
+									<div class="banner">
+										<p>联想启天M系列</p>
+										<img src="images/png/taishiji/8.png" alt="" />
+									</div>
+									<p>联想启天M商用台式电脑I7-6700 4G 1T  1G  DVDRW光驱标配主机+23英寸显示器</p>
+									  
+								</div>	
+								<div class="fang">
+									<div class="banner">
+										<p style="font-size: 16px;margin-bottom: 0.3rem;">联想（Lenovo）扬天A系列</p>
+										<img src="images/png/taishiji/9.png" alt="" />
+									</div>
+									<p>联想（Lenovo）扬天A6800f 台式电脑 （I5-6500 4G 1T 2G独显 Rambo WIFI Windows) 21.5英寸</p>
+									  
+								</div>	
+								<div class="fang">
+									<div class="banner">
+										<p>联想(Lenovo) 扬天T系列</p>
+										<img src="images/png/taishiji/10.png" alt="" />
+									</div>
+									<p>联想(lenovo) 扬天T4900i7-6700/8G/1T/2G独显/DVD</p>
+									  
+								</div>	
+								<div class="fang">
+									<div class="banner">
+										<p>ThinkCentre E系列</p>
+										<img src="images/png/taishiji/11.png" alt="" />
+									</div>
+									<p>联想（ThinkCentre）E73  i5-4460S 4G 500G 光驱 1G独显 </p>
+									  
+								</div>	
+							</div>
+						</div>
+						<div class="bottom">
+							<div class="sanjiao"></div>
+							<div class="bottom-box" style="width: 550px;">
+								<div class="thume actives">
+									<img src="images/png/taishiji/1.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/taishiji/2.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/taishiji/3.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/taishiji/4.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/taishiji/5.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/taishiji/6.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/taishiji/7.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/taishiji/8.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/taishiji/9.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/taishiji/10.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/taishiji/11.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<span class="bl-icon bl-icon-close"></span>
+				</section>
+				<!-- 笔记本电脑 -->
+				<section>
+					<div class="bl-box">
+						<h2 class="css44f6aecc163bc"><span>笔记本电脑</span></h2>
+						<p>Notebook computer</p>
+					</div>
+					<div class="bl-content bijiben" style="top:0;left: 0;right: 0;bottom: 0;padding: 0;background:#fff;background-color:#F6F6F6;background-size: 100% 100%;width: 100%;height: 100%;">
+						<div class="top">
+							<div class="top-box">
+								<div class="fang activees">
+									<div class="banner">
+										<p>小新系列</p>
+										<img src="images/png/bijiben/1.png" alt="" />
+									</div>
+									<p>小新310-IKB I7 /8G/1TB/2G独显/15.6英寸Windows 10</p>
+									
+								</div>	
+								<div class="fang">
+									<div class="banner">
+										<p>小新Air  13 Pro</p>
+										<img src="images/png/bijiben/2.png" alt="" />
+									</div>
+									<p>小新Air 13 Pro (I7/Windows 10 /13.3英寸/8G/512G SSD)</p>
+									
+								</div>			
+								<div class="fang">
+									<div class="banner">
+										<p>小新700系列</p>
+										<img src="images/png/bijiben/3.png" alt="" />
+									</div>
+									<p>小新700 (I7/ 15.6英寸/8G/4G独显/1T+128G SSD Windows 10 </p>
+									
+								</div>			
+								<div class="fang">
+									<div class="banner">
+										<p>拯救者系列</p>
+										<img src="images/png/bijiben/4.png" alt="" />
+									</div>
+									<p>拯救者 (I7/ 15.6英寸/4G独显/8G/1T+128G Windows 10 )</p>
+									
+								</div>			
+								<div class="fang">
+									<div class="banner">
+										<p>YOGA 5 Pro系列</p>
+										<img src="images/png/bijiben/5.png" alt="" />
+									</div>
+									<p>YOGA 5 Pro (I7/ 13.9英寸/8G/512G SSD/Windows 10 )</p>
+									
+								</div>			
+								<div class="fang">
+									<div class="banner">
+										<p>天逸100系列</p>
+										<img src="images/png/bijiben/6.png" alt="" />
+									</div>
+									<p>天逸100 (I5 /4G/500G/ Windows 10 /14英寸/2G独显DVD)</p>
+									
+								</div>		
+								<div class="fang">
+									<div class="banner">
+										<p>联想（lenovo）ideapad310S</p>
+										<img src="images/png/bijiben/7.png" alt="" />
+									</div>
+									<p>ideapad310S I7-7500U/8G/256固态/2G星光银</p>
+									  
+								</div>			
+								<div class="fang">
+									<div class="banner">
+										<p>ThinkPad T系列</p>
+										<img src="images/png/bijiben/8.png" alt="" />
+									</div>
+									<p>ThinkPad T460 14英寸笔记本电脑（i7-6700HQ 8G 128GSSD+500G 2G独显 FHD IPS Win10专业版)</p>
+									<!--底部的各种样式-->
+									  <!--<div class="fang-bottom">
+										<div>【13.3英寸/I7/8G/512G/金】</div>
+										<div>【13.3英寸/I7/8G/512G/银】</div>
+										<div>【13.3英寸/I7/8G/256G/金】</div>
+										<div>【13.3英寸/I7/8G/256G/银】</div>
+										<div>【13.3英寸/I5/8G/256G/金】</div>
+										<div>【13.3英寸/I5/8G/256G/银】</div>
+										<div>【13.3英寸/I5/4G/256G/金】</div>
+										<div>【13.3英寸/I5/4G/256G/银】</div>
+										<div>【13.3英寸/I5/8G/48G流量版/金】</div>
+									</div>
+									<div class="jindian">
+										<p>现在进店立享优惠哦！</p><p>现售￥<span>6699</span></p>
+									</div>-->
+								</div>	
+								<div class="fang">
+									<div class="banner">
+										<p>ThinkPad X	系列</p>
+										<img src="images/png/bijiben/9.png" alt="" />
+									</div>
+									<p>ThinkPad X260  12.5英寸笔记本电脑（i7-6500U 8G 256G SSD Win7）</p>
+									  
+								</div>	
+								<div class="fang">
+									<div class="banner">
+										<p>ThinkPad X1 系列</p>
+										<img src="images/png/bijiben/10.png" alt="" />
+									</div>
+									<p>ThinkPad X1 Carbon 14英寸超极笔记本电脑（i7-6500U 8G 256GB SSD FHD IPS Win10 64位）</p>
+									  
+								</div>	
+								<div class="fang">
+									<div class="banner">
+										<p>ThinkPad S 系列</p>
+										<img src="images/png/bijiben/11.png" alt="" />
+									</div>
+									<p>联想ThinkPad new S1 12.5英寸超轻薄笔记本 i7-6500u 8G 256GSSD【触屏360度翻转】</p>
+									  
+								</div>	
+								<div class="fang">
+									<div class="banner">
+										<p>ThinkPad E 系列</p>
+										<img src="images/png/bijiben/12.png" alt="" />
+									</div>
+									<p>联想ThinkPad E470 14英寸商务超轻薄笔记本电脑 i7-7500u 8G内存 1TB大硬盘 Win10)</p>
+									  
+								</div>	
+								<div class="fang">
+									<div class="banner">
+										<p>天逸310系列</p>
+										<img src="images/png/bijiben/13.png" alt="" />
+									</div>
+									<p>天逸310 (I5/Windows 10 家庭版/14.0英寸/4G/500G)</p>
+									  
+								</div>	
+							</div>
+						</div>
+						<div class="bottom">
+							<div class="sanjiao"></div>
+							<div class="bottom-box" style="width: 600px;">
+								<div class="thume actives">
+									<img src="images/png/bijiben/1.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/bijiben/2.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/bijiben/3.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/bijiben/4.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/bijiben/5.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/bijiben/6.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/bijiben/7.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/bijiben/8.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/bijiben/9.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/bijiben/10.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/bijiben/11.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/bijiben/12.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<span class="bl-icon bl-icon-close"></span>
+				</section>
+				<!--服务器-->
+				<section>
+					<div class="bl-box">
+						<h2 class="css44f6aecc163bc"><span>服务器</span></h2>
+						<p>The server</p>
+					</div>
+					<div class="bl-content fuwuqi" style="top:0;left: 0;right: 0;bottom: 0;padding: 0;background:#fff;background-color:#F6F6F6;background-size: 100% 100%;width: 100%;height: 100%;">
+						<div class="top">
+							<div class="top-box">
+								<div class="fang activees">
+									<div class="banner">
+										<p>Lenovo Flex System 机箱</p>
+										<img src="images/png/daopian/1.png" alt="" />
+									</div>
+									<p>英特尔® 至强® 处理器   2个高效2500瓦电源模块  可支持四个网络/存储/直通交换机模块并可升级为八个逻辑模块，可支持Ethernet, Fibre Channel, FCoE, ISCI和InfiniBand</p>
+									
+								</div>	
+								<div class="fang">
+									<div class="banner">
+										<p>X240  M5</p>
+										<img src="images/png/daopian/2.png" alt="" />
+									</div>
+									<p>英特尔® 至强® 处理器八核E5-2620 v3 8C 2.4GHz  1*16GB DDR4 2133MHz 内存，最大可配置 768GB  标配无硬盘，最大可配置2个热插拔2.5"SAS/SATA硬盘，或4个1.8" SSD；可选支持2.5" NVMe 企业级PCIe SSD</p>
+									
+								</div>			
+								<div class="fang">
+									<div class="banner">
+										<p>Thinkserver RS260</p>
+										<img src="images/png/fuwuqi/1.png" alt="" />
+									</div>
+									<p>1U机架  英特尔® 至强® 处理器E3-1230 v5   1*8GB ECC UDIMM DDR3 内存，最大可扩展至64GB</p>
+									
+								</div>			
+								<div class="fang">
+									<div class="banner">
+										<p>Thinkserver RD330</p>
+										<img src="images/png/fuwuqi/2.png" alt="" />
+									</div>
+									<p>ThinkServer RD330 S2407 4/300A2HOD  300G 企业级 热插拔SAS 2.5寸硬盘</p>
+									
+								</div>			
+								<div class="fang">
+									<div class="banner">
+										<p>Thinkserver RD340</p>
+										<img src="images/png/fuwuqi/3.png" alt="" />
+									</div>
+									<p>ThinkServer RD340 S2420v2 4/300A3HOD 1*4GB LV-RDIMM DDR3 1600内存，最大可扩展至192GB </p>
+									
+								</div>			
+								<div class="fang">
+									<div class="banner">
+										<p>Thinkserver RD450</p>
+										<img src="images/png/fuwuqi/4.png" alt="" />
+									</div>
+									<p>ThinkServer RD450 S2609v3 R510i_bak  1*4GB DDR4 2133内存，最大可拓展至512GB  1*300GB 热插拔SAS 2.5寸硬盘(10000转)，最大可拓展到28.8TB存储空间</p>
+									
+								</div>		
+								<div class="fang">
+									<div class="banner">
+										<p>Thinkserver</p>
+										<img src="images/png/tashi/1.png" alt="" />
+									</div>
+									<p>英特尔® 至强® 处理器E5-2609 v4 1.7GHz   1*8GB DDR4 2400内存，最大可拓展至1024GB</p>
+									  
+								</div>		
+								<div class="fang">
+									<div class="banner">
+										<p>ThinkserverTS250</p>
+										<img src="images/png/tashi/2.png" alt="" />
+									</div>
+									<p>4U塔式  I3 6100   1*4GB DDR4 2133内存，可扩展至32GB 1TB非热插拔SATA3.5寸硬盘(7200转)，可扩展到24TB存储空间</p>
+									  
+								</div>	
+								<div class="fang">
+									<div class="banner">
+										<p>Thinkserver TS50X</p>
+										<img src="images/png/tashi/3.png" alt="" />
+									</div>
+									<p>TS50X G3250/2G    2GB PC3-12800 1600MHz DDR3 UDIMM *1, 支持2根 UDIMMs 1块 500GB SATA, 支持2个3.5寸硬盘</p>
+									  
+								</div>	
+								<div class="fang">
+									<div class="banner">
+										<p>SYSTEM  X3100</p>
+										<img src="images/png/tashi/4.png" alt="" />
+									</div>
+									<p>System x3100 M5 5457I41  英特尔® 至强® 处理器E3-1241v3 3.5GHz 4核 </p>
+									  
+								</div>	
+								<div class="fang">
+									<div class="banner">
+										<p>System  x3500</p>
+										<img src="images/png/tashi/5.png" alt="" />
+									</div>
+									<p>System x3500 M5 5464I35  英特尔® 至强® 处理器E5-2620 v3 2.4GHz 6核开放式硬盘托架，标配可支持到8块，最大可扩展到32块2.5英寸硬盘</p>
+									  
+								</div>	
+							</div>
+						</div>
+						<div class="bottom">
+							<div class="sanjiao"></div>
+							<div class="bottom-box" style="width: 550px;">
+								<div class="thume actives">
+									<img src="images/png/daopian/1.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/daopian/2.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/fuwuqi/1.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/fuwuqi/2.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/fuwuqi/3.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/fuwuqi/4.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/tashi/1.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/tashi/2.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/tashi/3.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/tashi/4.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/tashi/5.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<span class="bl-icon bl-icon-close"></span>
+				</section>
+				<!--打印机-->
+				<section>
+					<div class="bl-box">
+						<h2 class="css44f6aecc163bc"><span>打印机</span></h2>
+						<p>Cooperation mode</p>
+					</div>
+					<div class="bl-content dayin" style="top:0;left: 0;right: 0;bottom: 0;padding: 0;background:#fff;background-color:#F6F6F6;background-size: 100% 100%;width: 100%;height: 100%;">
+						<div class="top">
+							<div class="top-box">
+								<div class="fang activees">
+									<div class="banner">
+										<p>HP LaserJet Pro P1108</p>
+										<img src="images/png/hp/1.png" alt="" />
+									</div>
+									<p>P1108(黑白激光A4打印机)18页/分钟；600*600dpi;</p>
+									
+								</div>	
+								<div class="fang">
+									<div class="banner">
+										<p>HP LaserJet Ultra M106w</p>
+										<img src="images/png/hp/2.png" alt="" />
+									</div>
+									<p>M106W(黑白激光A4)打印22页/分钟；分辨率600*600dpi</p>
+									
+								</div>			
+								<div class="fang">
+									<div class="banner">
+										<p>HP LaserJet Pro MFP M126nw</p>
+										<img src="images/png/hp/3.png" alt="" />
+									</div>
+									<p>M126NW处理器 600MHz  A4,打印速度20页/分钟； 600×600dpi，复印速度20页/分钟；分辨率600*600dpi,扫描速度7页/分钟；分辨率1200*1200dpi</p>
+									
+								</div>			
+								<div class="fang">
+									<div class="banner">
+										<p>HP LaserJet Pro M227fdw</p>
+										<img src="images/png/hp/4.png" alt="" />
+									</div>
+									<p>M227FDW处理器 800MHz  A4,打印速度28页/分钟； 1200×1200dpi，复印速度28页/分钟；分辨率600*600dpi,扫描速度15页/分钟；分辨率1200*1200dpi,传真分辨率300*300dpi</p>
+									
+								</div>			
+								<div class="fang">
+									<div class="banner">
+										<p>HP LaserJet Pro MFP M427dw</p>
+										<img src="images/png/hp/5.png" alt="" />
+									</div>
+									<p>M427DW处理器 1200MHz  A4,打印速度38页/分钟； 1200×1200dpi，复印速度38页/分钟；分辨率600*600dpi扫描速度26页/分钟；分辨率1200*1200dpi</p>
+									
+								</div>			
+								<div class="fang">
+									<div class="banner">
+										<p>LJ2208W</p>
+										<img src="images/png/len/1.png" alt="" />
+									</div>
+									<p>LJ2208W(黑白激光A4打印机)22页/分钟；1200*600dpi;WIFI</p>
+									
+								</div>		
+								<div class="fang">
+									<div class="banner">
+										<p>M7218W</p>
+										<img src="images/png/len/2.png" alt="" />
+									</div>
+									<p>M7218W(黑白激光A4一体机)打印22页/分钟；分辨率1200*600dpi;复印22页/分钟；扫描2400*2400 dpi；手动双面打印；无线WIFI</p>
+									
+								</div>			
+								<div class="fang">
+									<div class="banner">
+										<p>S1801</p>
+										<img src="images/png/len/3.png" alt="" />
+									</div>
+									<p>S1801 A4  18页/分钟；600*600dpi;手动双面打印</p>
+									
+								</div>	
+								<div class="fang">
+									<div class="banner">
+										<p>LJ4000DN</p>
+										<img src="images/png/len/4.png" alt="" />
+									</div>
+									<p>LJ4000DN 处理器Cortex-A9  800MHz 内存256M;A4 40页/分钟；1200*1200dpi</p>
+									
+								</div>	
+								<div class="fang">
+									<div class="banner">
+										<p>S4800DN</p>
+										<img src="images/png/len/5.png" alt="" />
+									</div>
+									<p>S4800DN处理器Cortex-A9  800MHz 内存256M;A4 47页/分钟；1200*1200dpi</p>
+									
+								</div>	
+								<div class="fang">
+									<div class="banner">
+										<p>LJ4010DN</p>
+										<img src="images/png/len/6.png" alt="" />
+									</div>
+									<p>LJ4010DN处理器RM7035C 533MHz 内存512M;A4 40页/分钟；双面35页/分钟；1200*1200dpi</p>
+									
+								</div>	
+								<div class="fang">
+									<div class="banner">
+										<p>F2072</p>
+										<img src="images/png/len/7.png" alt="" />
+									</div>
+									<p>F2072 处理器 433MHz 内存64M;A4打印速度20页/分钟；手动双面打印；600×600dpi，最高可达1200*1200dpi复印速度20页/分钟；分辨率600*600dpi扫描分辨率4800×4800 dpi</p>
+									
+								</div>	
+								<div class="fang">
+									<div class="banner">
+										<p>M7675DXF</p>
+										<img src="images/png/len/8.png" alt="" />
+									</div>
+									<p>M7675DXF 处理器 433MHz 内存64M;A4打印速度30页/分钟； 600×600dpi，最高可达1200*1200dpi复印速度30页/分钟；分辨率600*600dpi扫描分辨率19200×19200 dpi自动进稿器</p>
+									
+								</div>	
+								<div class="fang">
+									<div class="banner">
+										<p>M8960DNF</p>
+										<img src="images/png/len/9.png" alt="" />
+									</div>
+									<p>M8960DNF 处理器 RM7035C 533MHz 内存512M;A4打印速度40页/分钟 双面35页/分钟； 600×600dpi，最高可达1200*1200dpi复印速度40页/分钟；分辨率600*600dpi传真速度 33.6Kbps光学分辨率 600×2400dpi扫描分辨率19200×19200 dpi</p>
+									
+								</div>	
+							</div>
+						</div>
+						<div class="bottom">
+							<div class="sanjiao"></div>
+							<div class="bottom-box" style="width: 700px;">
+								<div class="thume actives">
+									<img src="images/png/hp/1.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/hp/2.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/hp/3.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/hp/4.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/hp/5.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/len/1.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/len/2.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/len/3.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/len/4.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/len/5.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/len/6.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/len/7.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/len/8.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+								<div class="thume">
+									<img src="images/png/len/9.png" alt="" />
+									<div class="zhao"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<span class="bl-icon bl-icon-close"></span>
+				</section>
+				
+				<!--联系我们-->
+				<section>
+					<div class="bl-box">
+						<h2 class="css44f6aecc163bc"><span>联系我们</span></h2>
+						<p>Contact us</p>
+					</div>
+					<div class="bl-content" style="top:0;left: 0;right: 0;bottom: 0;padding: 0;background: url(images/bg4.png) no-repeat;background-color:#F6F6F6;background-size: 100% 100%;width: 100%;height: 100%;">
+						<div class="contentes contents">
+							<h2 style="margin: 0;">联系方式</h2>
+							<div class="erweima">
+								<img src="images/erweima.png"/>
+							</div>
+							<p>手机：<span style="font-size: 16px;color: #313131;">15735182699</span></p>
+							<p>联系人：<span>陈璐瑶</span></p>
+							<p>邮箱：<span>1773954924@qq.com</span></p>
+							<p>微信：<span>C1773954924</span></p>
+							<p>地址：<span>陕西省西安市雁塔区绿地乐和城3号楼</span></p>
+						</div>
+
+					</div>
+					<span class="bl-icon bl-icon-close"></span>
+				</section>
+				<!-- Panel items for the works -->
+				<div class="bl-panel-items" id="bl-panel-work-items">
+					
+				</div>
+			</div>
+		</div>
+		<!-- /container -->
+
+		<script src="js/boxlayout.js"></script>
+		<script>
+			$(function() {
+				Boxlayout.init();
+			});
+			
+		</script>
+		<script>
+			$(".fu_logo").click(function() {
+				$(".fuBox").animate({
+					left: "0px"
+				});
+				$(".fuceng").fadeIn();
+			});
+			$(".fuceng").click(function() {
+				$(".fuBox").animate({
+					left: "-80vw"
+				});
+				$(".fuceng").fadeOut();
+			});
+			$(".fuBox .bl-icon").click(function() {
+				$(".fuBox").animate({
+					left: "-80vw"
+				});
+				$(".fuceng").fadeOut();
+			});
+			$(".bijiben").on("touchend",".thume",function(){
+				var index=$(this).index();
+				console.log(index)
+				$(".bijiben .thume").removeClass("actives");
+				$(this).addClass("actives");
+				$(".bijiben .fang").removeClass("activees");
+				$(".bijiben .fang").eq(index).addClass("activees");
+			});
+			$(".taishi").on("touchend",".thume",function(){
+				var index=$(this).index();
+				$(".taishi .thume").removeClass("actives");
+				$(this).addClass("actives");
+				$(".taishi .fang").removeClass("activees");
+				$(".taishi .fang").eq(index).addClass("activees");
+			});
+			$(".yiti").on("touchend",".thume",function(){
+				var index=$(this).index();
+				$(".yiti .thume").removeClass("actives");
+				$(this).addClass("actives");
+				$(".yiti .fang").removeClass("activees");
+				$(".yiti .fang").eq(index).addClass("activees");
+			});
+			$(".dayin").on("touchend",".thume",function(){
+				var index=$(this).index();
+				$(".dayin .thume").removeClass("actives");
+				$(this).addClass("actives");
+				$(".dayin .fang").removeClass("activees");
+				$(".dayin .fang").eq(index).addClass("activees");
+			});
+		
+			var n=0;
+			var next=0;
+			$(".fuwuqi .thume").on("touchend",function(){
+				var index=$(this).index();
+				$(".fuwuqi .thume").removeClass("actives");
+				$(this).addClass("actives");
+				$(".fuwuqi .fang").removeClass("activees");
+				$(".fuwuqi .fang").eq(index).addClass("activees");
+				n=index;
+				
+			});
+			function dong(fu,zi){
+				
+				var down;
+				$(fu).on("touchstart",zi,function(e){
+					down=e.originalEvent.changedTouches[0].clientX;		
+				})
+				$(fu).on("touchend",zi,function(e){
+					var up=e.originalEvent.changedTouches[0].clientX;
+					if(up-down>80){			
+						next=n+1;
+						if(next>$(fu).find(".fang").length-1){
+							next=0;
+						}
+						if(next>=7){
+							var width=$(fu).closest(".bl-content").find(".bottom-box").width()/2;
+							$(fu).closest(".bl-content").find(".bottom-box").css("transform","translateX(-"+width+"px)")
+						}else if(next<=7){
+							$(fu).closest(".bl-content").find(".bottom-box").css("transform","translateX(0)")
+						}
+						$(fu).closest(".bl-content").find(".thume").removeClass("actives");
+						$(fu).closest(".bl-content").find(".thume").eq(next).addClass("actives");
+						$(fu).find(".fang").removeClass("activees");
+						$(fu).find(".fang").eq(next).addClass("activees");
+						n=next;
+					}
+					if(up-down<-80){
+						next=n-1;
+						if(next<0){
+							next=$(fu).find(".fang").length-1;
+							console.log(next)
+						}
+						if(next>=7){
+							var width=$(fu).closest(".bl-content").find(".bottom-box").width()/2;
+							console.log(width)
+							$(fu).closest(".bl-content").find(".bottom-box").css("transform","translateX(-"+width+"px)")
+						}else{
+							
+							$(fu).closest(".bl-content").find(".bottom-box").css("transform","translateX(0)")
+						}
+						$(fu).closest(".bl-content").find(".thume").removeClass("actives");
+						$(fu).closest(".bl-content").find(".thume").eq(next).addClass("actives");
+						$(fu).find(".fang").removeClass("activees");
+						$(fu).find(".fang").eq(next).addClass("activees");
+						n=next;
+					}
+				})
+			}
+			dong($(".fuwuqi").find(".top-box"),$(".fang"));
+			dong($(".bijiben").find(".top-box"),$(".fang"));
+			dong($(".taishi").find(".top-box"),$(".fang"));
+			dong($(".yiti").find(".top-box"),$(".fang"));
+			dong($(".dayin").find(".top-box"),$(".fang"));
+			var move = function(e) {
+			  e.preventDefault && e.preventDefault();
+			  e.returnValue = false;
+			  e.stopPropagation && e.stopPropagation();
+			  return false;
+			}
+			//取消禁止滚动
+			function remliste() {
+			  document.removeEventListener('touchmove', move, false);
+			}
+			//禁止滚动
+			function addliste() {
+			  document.addEventListener('touchmove', move, false);
+			}
+			$(document).on("touchmove",function(){
+				addliste();
+			})
+			$(".dianzi").on("touchmove",function(){
+				remliste();
+			})
+			$("#bl-work-section").on("touchmove",function(){
+				remliste();
+			})
+		</script>
+
+		<!-- 业务切换 -->
+		<script src="js/swiper.js"></script>
+		<script src="js/edu.js"></script>
+	</body>
+	
+		
+</html>
